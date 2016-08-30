@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{c8853acc-0078-4d20-ba7b-05f7bc90c222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\protobufObject">
+      <UniqueIdentifier>{3b8e2873-5604-4fa0-9a16-c80a297d71d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Common.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CommonSocket.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\DefaultSocket.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\NetworkManager.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\TLMNConfig.hpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Utility.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\administrator.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\bet.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\captcha.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\change_host.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\change_rule.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\create_room.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\enter_room.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\enter_zone.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\exit_room.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\filter_avatar.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\filter_room.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\filter_top_user.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\friend.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\gift.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\initialize.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\instant_message.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\invite_to_play.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\kick_player_out.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\level.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\lock_room.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\login.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\logout.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\lookup_money_history.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\mail.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\map_field_entry.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\match_begin.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\match_end.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\open_id_login.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\ping.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\player.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\prepare_new_match.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\purchase_money.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\quick_play.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\ready_to_play.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\register.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\room_owner_changed.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\send_text_emoticon.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\session_expired.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\start_match.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\text_emoticon.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\turn.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\update_money.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\update_user_info.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\update_user_setting.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="protobufObject\user_info.pb.h">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClInclude>
+    <ClInclude Include="MersenneTwister.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePerformanceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Common.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\DefaultSocket.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\NetworkManager.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\TLMNConfig.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\administrator.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\bet.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\captcha.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\change_host.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\change_rule.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\create_room.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\enter_room.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\enter_zone.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\exit_room.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\filter_avatar.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\filter_room.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\filter_top_user.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\friend.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\gift.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\initialize.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\instant_message.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\invite_to_play.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\kick_player_out.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\level.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\lock_room.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\login.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\logout.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\lookup_money_history.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\mail.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\map_field_entry.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\match_begin.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\match_end.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\open_id_login.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\ping.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\player.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\prepare_new_match.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\purchase_money.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\quick_play.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\ready_to_play.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\register.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\room_owner_changed.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\send_text_emoticon.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\session_expired.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\start_match.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\text_emoticon.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\turn.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\update_money.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\update_user_info.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\update_user_setting.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="protobufObject\user_info.pb.cc">
+      <Filter>Source Files\protobufObject</Filter>
+    </ClCompile>
+    <ClCompile Include="MersenneTwister.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="protobufObject\administrator.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\bet.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\captcha.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\change_host.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\change_rule.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\create_room.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\enter_room.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\enter_zone.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\exit_room.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\filter_avatar.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\filter_room.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\filter_top_user.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\friend.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\gift.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\initialize.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\instant_message.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\invite_to_play.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\kick_player_out.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\level.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\lock_room.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\login.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\logout.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\lookup_money_history.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\mail.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\map_field_entry.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\match_begin.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\match_end.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\open_id_login.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\ping.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\player.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\prepare_new_match.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\purchase_money.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\quick_play.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\ready_to_play.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\register.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\room_owner_changed.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\send_text_emoticon.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\session_expired.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\start_match.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\text_emoticon.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\turn.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\update_money.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\update_user_info.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\update_user_setting.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+    <None Include="protobufObject\user_info.proto">
+      <Filter>Source Files\protobufObject</Filter>
+    </None>
+  </ItemGroup>
+</Project>

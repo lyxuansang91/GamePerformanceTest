@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{16C15A79-BEE6-472B-8F8D-060A25218981}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GamePerformanceTest</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>.;google;zlib128\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libprotobuf.lib;WS2_32.LIB;zdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>.;google;zlib128\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libprotobuf.lib;WS2_32.LIB;zdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MersenneTwister.h" />
+    <ClInclude Include="protobufObject\administrator.pb.h" />
+    <ClInclude Include="protobufObject\bet.pb.h" />
+    <ClInclude Include="protobufObject\captcha.pb.h" />
+    <ClInclude Include="protobufObject\change_host.pb.h" />
+    <ClInclude Include="protobufObject\change_rule.pb.h" />
+    <ClInclude Include="protobufObject\create_room.pb.h" />
+    <ClInclude Include="protobufObject\enter_room.pb.h" />
+    <ClInclude Include="protobufObject\enter_zone.pb.h" />
+    <ClInclude Include="protobufObject\exit_room.pb.h" />
+    <ClInclude Include="protobufObject\filter_avatar.pb.h" />
+    <ClInclude Include="protobufObject\filter_room.pb.h" />
+    <ClInclude Include="protobufObject\filter_top_user.pb.h" />
+    <ClInclude Include="protobufObject\friend.pb.h" />
+    <ClInclude Include="protobufObject\gift.pb.h" />
+    <ClInclude Include="protobufObject\initialize.pb.h" />
+    <ClInclude Include="protobufObject\instant_message.pb.h" />
+    <ClInclude Include="protobufObject\invite_to_play.pb.h" />
+    <ClInclude Include="protobufObject\kick_player_out.pb.h" />
+    <ClInclude Include="protobufObject\level.pb.h" />
+    <ClInclude Include="protobufObject\lock_room.pb.h" />
+    <ClInclude Include="protobufObject\login.pb.h" />
+    <ClInclude Include="protobufObject\logout.pb.h" />
+    <ClInclude Include="protobufObject\lookup_money_history.pb.h" />
+    <ClInclude Include="protobufObject\mail.pb.h" />
+    <ClInclude Include="protobufObject\map_field_entry.pb.h" />
+    <ClInclude Include="protobufObject\match_begin.pb.h" />
+    <ClInclude Include="protobufObject\match_end.pb.h" />
+    <ClInclude Include="protobufObject\open_id_login.pb.h" />
+    <ClInclude Include="protobufObject\ping.pb.h" />
+    <ClInclude Include="protobufObject\player.pb.h" />
+    <ClInclude Include="protobufObject\prepare_new_match.pb.h" />
+    <ClInclude Include="protobufObject\purchase_money.pb.h" />
+    <ClInclude Include="protobufObject\quick_play.pb.h" />
+    <ClInclude Include="protobufObject\ready_to_play.pb.h" />
+    <ClInclude Include="protobufObject\register.pb.h" />
+    <ClInclude Include="protobufObject\room_owner_changed.pb.h" />
+    <ClInclude Include="protobufObject\send_text_emoticon.pb.h" />
+    <ClInclude Include="protobufObject\session_expired.pb.h" />
+    <ClInclude Include="protobufObject\start_match.pb.h" />
+    <ClInclude Include="protobufObject\text_emoticon.pb.h" />
+    <ClInclude Include="protobufObject\turn.pb.h" />
+    <ClInclude Include="protobufObject\update_money.pb.h" />
+    <ClInclude Include="protobufObject\update_user_info.pb.h" />
+    <ClInclude Include="protobufObject\update_user_setting.pb.h" />
+    <ClInclude Include="protobufObject\user_info.pb.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Utils\Common.h" />
+    <ClInclude Include="Utils\CommonSocket.h" />
+    <ClInclude Include="Utils\DefaultSocket.h" />
+    <ClInclude Include="Utils\NetworkManager.h" />
+    <ClInclude Include="Utils\TLMNConfig.hpp" />
+    <ClInclude Include="Utils\Utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GamePerformanceTest.cpp" />
+    <ClCompile Include="MersenneTwister.cpp" />
+    <ClCompile Include="protobufObject\administrator.pb.cc" />
+    <ClCompile Include="protobufObject\bet.pb.cc" />
+    <ClCompile Include="protobufObject\captcha.pb.cc" />
+    <ClCompile Include="protobufObject\change_host.pb.cc" />
+    <ClCompile Include="protobufObject\change_rule.pb.cc" />
+    <ClCompile Include="protobufObject\create_room.pb.cc" />
+    <ClCompile Include="protobufObject\enter_room.pb.cc" />
+    <ClCompile Include="protobufObject\enter_zone.pb.cc" />
+    <ClCompile Include="protobufObject\exit_room.pb.cc" />
+    <ClCompile Include="protobufObject\filter_avatar.pb.cc" />
+    <ClCompile Include="protobufObject\filter_room.pb.cc" />
+    <ClCompile Include="protobufObject\filter_top_user.pb.cc" />
+    <ClCompile Include="protobufObject\friend.pb.cc" />
+    <ClCompile Include="protobufObject\gift.pb.cc" />
+    <ClCompile Include="protobufObject\initialize.pb.cc" />
+    <ClCompile Include="protobufObject\instant_message.pb.cc" />
+    <ClCompile Include="protobufObject\invite_to_play.pb.cc" />
+    <ClCompile Include="protobufObject\kick_player_out.pb.cc" />
+    <ClCompile Include="protobufObject\level.pb.cc" />
+    <ClCompile Include="protobufObject\lock_room.pb.cc" />
+    <ClCompile Include="protobufObject\login.pb.cc" />
+    <ClCompile Include="protobufObject\logout.pb.cc" />
+    <ClCompile Include="protobufObject\lookup_money_history.pb.cc" />
+    <ClCompile Include="protobufObject\mail.pb.cc" />
+    <ClCompile Include="protobufObject\map_field_entry.pb.cc" />
+    <ClCompile Include="protobufObject\match_begin.pb.cc" />
+    <ClCompile Include="protobufObject\match_end.pb.cc" />
+    <ClCompile Include="protobufObject\open_id_login.pb.cc" />
+    <ClCompile Include="protobufObject\ping.pb.cc" />
+    <ClCompile Include="protobufObject\player.pb.cc" />
+    <ClCompile Include="protobufObject\prepare_new_match.pb.cc" />
+    <ClCompile Include="protobufObject\purchase_money.pb.cc" />
+    <ClCompile Include="protobufObject\quick_play.pb.cc" />
+    <ClCompile Include="protobufObject\ready_to_play.pb.cc" />
+    <ClCompile Include="protobufObject\register.pb.cc" />
+    <ClCompile Include="protobufObject\room_owner_changed.pb.cc" />
+    <ClCompile Include="protobufObject\send_text_emoticon.pb.cc" />
+    <ClCompile Include="protobufObject\session_expired.pb.cc" />
+    <ClCompile Include="protobufObject\start_match.pb.cc" />
+    <ClCompile Include="protobufObject\text_emoticon.pb.cc" />
+    <ClCompile Include="protobufObject\turn.pb.cc" />
+    <ClCompile Include="protobufObject\update_money.pb.cc" />
+    <ClCompile Include="protobufObject\update_user_info.pb.cc" />
+    <ClCompile Include="protobufObject\update_user_setting.pb.cc" />
+    <ClCompile Include="protobufObject\user_info.pb.cc" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Utils\Common.cpp" />
+    <ClCompile Include="Utils\DefaultSocket.cpp" />
+    <ClCompile Include="Utils\NetworkManager.cpp" />
+    <ClCompile Include="Utils\TLMNConfig.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="protobufObject\administrator.proto" />
+    <None Include="protobufObject\bet.proto" />
+    <None Include="protobufObject\captcha.proto" />
+    <None Include="protobufObject\change_host.proto" />
+    <None Include="protobufObject\change_rule.proto" />
+    <None Include="protobufObject\create_room.proto" />
+    <None Include="protobufObject\enter_room.proto" />
+    <None Include="protobufObject\enter_zone.proto" />
+    <None Include="protobufObject\exit_room.proto" />
+    <None Include="protobufObject\filter_avatar.proto" />
+    <None Include="protobufObject\filter_room.proto" />
+    <None Include="protobufObject\filter_top_user.proto" />
+    <None Include="protobufObject\friend.proto" />
+    <None Include="protobufObject\gift.proto" />
+    <None Include="protobufObject\initialize.proto" />
+    <None Include="protobufObject\instant_message.proto" />
+    <None Include="protobufObject\invite_to_play.proto" />
+    <None Include="protobufObject\kick_player_out.proto" />
+    <None Include="protobufObject\level.proto" />
+    <None Include="protobufObject\lock_room.proto" />
+    <None Include="protobufObject\login.proto" />
+    <None Include="protobufObject\logout.proto" />
+    <None Include="protobufObject\lookup_money_history.proto" />
+    <None Include="protobufObject\mail.proto" />
+    <None Include="protobufObject\map_field_entry.proto" />
+    <None Include="protobufObject\match_begin.proto" />
+    <None Include="protobufObject\match_end.proto" />
+    <None Include="protobufObject\open_id_login.proto" />
+    <None Include="protobufObject\ping.proto" />
+    <None Include="protobufObject\player.proto" />
+    <None Include="protobufObject\prepare_new_match.proto" />
+    <None Include="protobufObject\purchase_money.proto" />
+    <None Include="protobufObject\quick_play.proto" />
+    <None Include="protobufObject\ready_to_play.proto" />
+    <None Include="protobufObject\register.proto" />
+    <None Include="protobufObject\room_owner_changed.proto" />
+    <None Include="protobufObject\send_text_emoticon.proto" />
+    <None Include="protobufObject\session_expired.proto" />
+    <None Include="protobufObject\start_match.proto" />
+    <None Include="protobufObject\text_emoticon.proto" />
+    <None Include="protobufObject\turn.proto" />
+    <None Include="protobufObject\update_money.proto" />
+    <None Include="protobufObject\update_user_info.proto" />
+    <None Include="protobufObject\update_user_setting.proto" />
+    <None Include="protobufObject\user_info.proto" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
